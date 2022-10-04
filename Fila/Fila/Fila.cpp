@@ -91,31 +91,31 @@ void insere()
 	if (inicio == NULL) {
 		inicio = novo;
 		fim = novo;
-		cout << "Primeiro elemento inserido!" << endl;
+
+		inicio->prox = fim;
+
+		cout << "Primeiro elemento inserido na fila!" << endl;
 	}
 	else
 	{
-		if (inicio->prox == NULL)
-		{
-			inicio->prox = novo;
-			cout << "Segundo ";
-		}
-
+		fim->prox = novo;
 		fim = novo;
-		cout << "Elemento inserido!" << endl;
+
+		cout << "Elemento inserido na fila!" << endl;
 	}
 }
 
 void remove()
 {
 	if (inicio == NULL) {
-		cout << "Lista vazia!" << endl;
+		cout << "Fila vazia!" << endl;
+		return;
 	}
 	else {
 
 		NO* aux = inicio;
 
-		cout << "Primeiro elemento da lista: " << inicio->valor << endl;
+		cout << "Primeiro elemento da fila: " << inicio->valor << endl;
 		inicio = inicio->prox;
 
 		free(aux);

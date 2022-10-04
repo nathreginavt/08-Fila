@@ -1,6 +1,8 @@
 # Fila
 ---
 
+Nathália Regina Vieira Teixeira - nathalia.teixeira@fatec.sp.gov.br
+
 ## Objetivos
 
 Ao concluir esta atividade você deverá ter compreendido o seguinte conceito:
